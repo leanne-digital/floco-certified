@@ -1,0 +1,61 @@
+# --- macOS / editor junk ---
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Exports & archives (Claude Design ZIPs, backups) ---
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+exports/
+export/
+downloads/
+
+# --- Temporary / scratch files ---
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.old
+*.log
+
+# --- Original / unoptimized source images (keep only web-ready versions) ---
+assets/images/originals/
+assets/images/_raw/
+*.psd
+*.ai
+*.sketch
+*.fig
+*.heic
+*.tif
+*.tiff
+*.raw
+*.cr2
+*.nef
+
+# --- Dependencies & builds ---
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# --- Secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Claude Code local settings ---
+.claude/settings.local.json
+.claude/launch.json

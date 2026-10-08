@@ -1,0 +1,189 @@
+/* FLOCO Certified — responsive layer
+   The v4 design is desktop-first with inline styles. Desktop (>= 1200px) is untouched:
+   every layout rule below lives inside a max-width media query and only overrides
+   the inline styles (hence !important) on tablet and mobile.
+   Breakpoints: tablet 768–1199px, mobile <= 767px. */
+
+/* Hidden on desktop; shown below 1200px */
+.nav-toggle{display:none;}
+
+/* Keyboard focus (only visible when navigating with a keyboard) */
+a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3px;}
+
+/* =========================================================
+   TABLET + MOBILE (<= 1199px)
+   ========================================================= */
+@media (max-width:1199.98px){
+  .page{min-width:0 !important;}
+
+  /* Shared gutters (inline: padding 0 64px) */
+  .page [style*="padding:0 64px"]{padding-left:40px !important;padding-right:40px !important;}
+  .page > section[style*="padding:"]{padding-top:80px !important;padding-bottom:110px !important;}
+  .page [style*="margin:90px auto 0"],
+  .page [style*="margin:80px auto 0"],
+  .page [style*="margin:110px auto 0"]{margin-top:64px !important;}
+  .page [style*="margin:70px auto 0"]{margin-top:48px !important;}
+
+  /* ---------- Nav ---------- */
+  .nav-inner{padding:18px 40px !important;flex-wrap:wrap;row-gap:0 !important;}
+  .nav-links{display:none !important;}
+  .nav-cta a[href="#login"]{display:none !important;}
+  .nav-cta{margin-left:auto;}
+  .nav-toggle{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:46px;height:46px;padding:0 12px;border-radius:999px;border:1px solid rgba(242,245,245,.45);background:rgba(7,11,14,.35);cursor:pointer;}
+  .nav-toggle span{display:block;height:2px;background:#F2F5F5;border-radius:2px;transition:transform .2s,opacity .2s;}
+  .site-header.nav-open{background:#070B0E !important;}
+  .site-header.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .site-header.nav-open .nav-toggle span:nth-child(2){opacity:0;}
+  .site-header.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+  .site-header.nav-open .nav-links{display:flex !important;order:5;flex-basis:100%;flex-direction:column;gap:0 !important;padding:12px 0 8px;font-size:18px !important;}
+  .site-header.nav-open .nav-links a{padding:14px 0;border-top:1px solid rgba(242,245,245,.12);}
+  .site-header.nav-open .nav-cta a[href="#login"]{display:flex !important;}
+
+  /* ---------- Hero: photo becomes full-bleed background ---------- */
+  .hero{min-height:0 !important;}
+  .hero-media,.hero-shade{left:0 !important;}
+  .hero-shade{background:linear-gradient(180deg,rgba(7,11,14,.85) 0%,rgba(7,11,14,.55) 45%,rgba(7,11,14,.9) 100%) !important;}
+  .hero-curve{display:none !important;}
+  .hero-content{padding:170px 40px 110px !important;}
+  .hero-title{width:auto !important;max-width:100% !important;}
+  .hero-actions{flex-wrap:wrap;}
+  .hero-facts{flex-wrap:wrap;white-space:normal !important;row-gap:12px !important;}
+  .hero-badge{width:140px !important;right:40px !important;bottom:32px !important;}
+
+  /* ---------- Pillars band ---------- */
+  .pillars{flex-wrap:wrap;justify-content:center !important;gap:14px 28px !important;padding:22px 40px !important;letter-spacing:.1em !important;}
+  .pillars > span[style*="width:1px"]{display:none !important;}
+
+  /* ---------- Two-column splits stack ---------- */
+  .split{grid-template-columns:minmax(0,1fr) !important;gap:56px !important;}
+  .program-media{height:520px !important;}
+  .opp-list{padding-top:0 !important;}
+
+  /* ---------- Grids ---------- */
+  .why-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;row-gap:48px !important;}
+  .why-grid > div{grid-column:auto !important;}
+  .learn-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;row-gap:48px !important;}
+  .journey-line{display:none !important;}
+  .journey-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;row-gap:48px !important;}
+
+  /* ---------- Territory map ---------- */
+  .map-frame{height:480px !important;}
+  .territory-foot{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:32px !important;}
+  .territory-foot > a{grid-column:1 / -1;justify-self:start;}
+
+  /* ---------- Training ---------- */
+  .training-hero{height:620px !important;}
+  .training-caption{bottom:48px !important;}
+  .training-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:48px !important;padding:80px 40px 110px !important;}
+  .training-photos{grid-column:1 / -1;grid-template-rows:280px !important;grid-template-columns:1fr 1fr;}
+
+  /* ---------- Opportunities photo strip ---------- */
+  .opp-strip{grid-template-columns:repeat(3,minmax(0,1fr)) !important;height:auto !important;grid-auto-rows:220px;}
+
+  /* ---------- Find a Specialist ---------- */
+  .find-panel{grid-template-columns:minmax(0,1fr) !important;padding:56px 48px !important;gap:40px !important;}
+  .find-panel img{max-width:300px !important;}
+
+  /* ---------- FLOCO Family ---------- */
+  .family-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+  .family-grid > a:last-child{grid-column:1 / -1;}
+
+  /* ---------- Footer ---------- */
+  .footer-bottom{padding:32px 40px 36px !important;}
+}
+
+/* =========================================================
+   MOBILE (<= 767px)
+   ========================================================= */
+@media (max-width:767.98px){
+  /* Gutters & rhythm */
+  .page [style*="padding:0 64px"]{padding-left:20px !important;padding-right:20px !important;}
+  .page > section[style*="padding:"]{padding-top:56px !important;padding-bottom:80px !important;}
+  .page [style*="margin:90px auto 0"],
+  .page [style*="margin:80px auto 0"],
+  .page [style*="margin:110px auto 0"]{margin-top:44px !important;}
+  .page [style*="margin:70px auto 0"]{margin-top:36px !important;}
+  .page > svg[viewBox="0 0 1440 120"],
+  .training-hero > svg{height:56px !important;}
+
+  /* Type scale (inline sizes are desktop sizes) */
+  .page{font-size:19px !important;}
+  .page [style*="font-size:24px"]{font-size:19px !important;}
+  .page [style*="font-size:22px"]{font-size:18px !important;}
+  .page [style*="font-size:30px"]{font-size:24px !important;}
+  .page [style*="font-size:36px"]{font-size:28px !important;}
+  .page h2[style*="clamp(60px,5vw,80px)"]{font-size:42px !important;}
+  .journey-grid [style*="clamp(60px,5vw,80px)"]{font-size:52px !important;}
+  .hero-title{font-size:50px !important;}
+  .page a[style*="font-size:18px"][style*="padding:18px 30px"]{white-space:normal !important;padding:16px 24px !important;font-size:16px !important;}
+
+  /* Nav */
+  .nav-inner{padding:14px 20px !important;}
+  .nav-logo img{width:46px !important;}
+  .nav-cta{display:none !important;}
+  .nav-toggle{margin-left:auto;}
+  .site-header.nav-open .nav-cta{display:flex !important;order:6;flex-basis:100%;flex-direction:column;align-items:stretch !important;gap:12px !important;margin:4px 0 16px;}
+  .site-header.nav-open .nav-cta a{justify-content:center;text-align:center;}
+
+  /* Hero */
+  .hero-content{padding:130px 20px 40px !important;}
+  .hero-actions{flex-direction:column;align-items:stretch;white-space:normal !important;}
+  .hero-actions a{justify-content:center;text-align:center;font-size:16px !important;padding:17px 22px !important;}
+  .hero-facts{flex-direction:column;align-items:flex-start !important;gap:12px !important;margin-top:36px !important;}
+  .hero-facts > span[style*="width:1px"]{display:none !important;}
+  .hero{padding-bottom:36px;}
+  .hero-badge{position:relative !important;display:block;right:auto !important;bottom:auto !important;width:120px !important;margin:0 20px 0 auto;}
+
+  /* Pillars */
+  .pillars{padding:18px 20px !important;gap:12px 20px !important;font-size:15px !important;}
+
+  /* Splits & grids → single column */
+  .split{gap:40px !important;}
+  .program-media{height:340px !important;}
+  .program-accent{left:-10px !important;}
+  .why-grid,.learn-grid,.journey-grid,.fit-list,.family-grid{grid-template-columns:minmax(0,1fr) !important;}
+  .why-grid,.learn-grid,.journey-grid{row-gap:40px !important;}
+  .family-grid > a:last-child{grid-column:auto;}
+  .family-grid [style*="height:300px"]{height:220px !important;}
+  .family-grid div[style*="white-space:nowrap"]{white-space:normal !important;}
+  .fit-list > div{padding:18px 0 !important;}
+
+  /* Program "your company stays yours" panel */
+  .program-split [style*="padding:30px 34px"]{padding:24px 22px !important;}
+
+  /* Territory map */
+  .map-frame{height:400px !important;border-radius:20px !important;}
+  .map-legend{left:16px !important;bottom:14px !important;flex-wrap:wrap;gap:8px 16px !important;font-size:12px !important;letter-spacing:.12em !important;}
+  .territory-foot{grid-template-columns:minmax(0,1fr) !important;gap:20px !important;margin-top:36px !important;}
+  .territory-foot > a{justify-self:stretch;justify-content:center;text-align:center;}
+
+  /* Training */
+  .training-hero{height:480px !important;}
+  .training-caption{bottom:32px !important;}
+  .page .training-caption h2{font-size:40px !important;}
+  .training-grid{grid-template-columns:minmax(0,1fr) !important;gap:36px !important;padding:56px 20px 80px !important;}
+  .training-photos{grid-template-columns:1fr !important;grid-template-rows:220px 220px !important;}
+
+  /* Opportunities */
+  .opp-strip{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:160px;}
+  .page .opp-list > div{font-size:24px !important;column-gap:14px !important;}
+
+  /* Instructors palm leaf */
+  #instructors > img[aria-hidden]{width:110px !important;right:-24px !important;top:16px !important;}
+
+  /* Find a Specialist */
+  .find-panel{padding:36px 22px !important;border-radius:28px !important;}
+  .find-form{flex-direction:column;border-radius:28px !important;gap:6px;}
+  .find-form label{padding:4px 14px !important;}
+  .find-form button{padding:16px 20px !important;white-space:normal !important;}
+  .find-panel img{max-width:240px !important;}
+
+  /* Final CTA */
+  .cta-big{white-space:normal !important;padding:20px 28px !important;font-size:16px !important;justify-content:center;text-align:center;}
+  #apply img{width:160px !important;}
+
+  /* Footer */
+  .login-bar{flex-direction:column;gap:14px !important;padding:24px 20px !important;border-radius:28px !important;text-align:center;}
+  .footer-bottom{flex-direction:column;gap:10px;text-align:center;padding:28px 20px 32px !important;}
+  .footer-url{letter-spacing:.12em !important;word-break:break-all;}
+}
