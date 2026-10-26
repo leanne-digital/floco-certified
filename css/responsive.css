@@ -101,6 +101,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .territory-media{height:520px !important;}
   .territory-chip{right:24px !important;bottom:24px !important;}
   .journey-grid > li{min-width:0;}
+
+  /* ---------- How It Works page ---------- */
+  .hiw-step{grid-template-columns:110px minmax(0,1fr) !important;gap:28px 40px !important;}
+  .hiw-step:not(:last-child){padding-bottom:88px !important;}
+  .hiw-num{font-size:96px !important;}
+  .how-page .hiw-step:not(:last-child) .hiw-num::after{left:36px;top:96px;bottom:-80px;}
+  .hiw-media{grid-column:2;}
+  .page .hiw-step h3{font-size:40px !important;}
+  .hiw-badge{left:auto !important;right:-12px;bottom:-28px !important;width:130px !important;}
+  .day-strip{grid-template-columns:repeat(3,minmax(0,1fr)) !important;}
 }
 
 /* =========================================================
@@ -215,4 +225,23 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .who-panel{padding:32px 24px 36px !important;border-radius:28px !important;}
   .who-panel li{padding:16px 0 !important;}
   .who-panel li:last-child{padding-bottom:0 !important;}
+
+  /* How It Works page */
+  .hiw-step{grid-template-columns:minmax(0,1fr) !important;row-gap:18px !important;}
+  .hiw-step:not(:last-child){padding-bottom:64px !important;}
+  .hiw-num{font-size:72px !important;}
+  .how-page .hiw-step:not(:last-child) .hiw-num::after{display:none;}
+  .hiw-media{grid-column:auto;}
+  .page .hiw-step h3{font-size:32px !important;}
+  .hiw-media > div[style*="padding:44px"]{padding:30px 24px 34px !important;border-radius:28px !important;}
+  .hiw-media a[href^="mailto:"]{font-size:24px !important;}
+  .hiw-badge{width:100px !important;right:-6px;bottom:-20px !important;}
+  .day-strip{grid-template-columns:minmax(0,1fr) !important;gap:12px !important;}
+  .day-strip > li{padding:22px 22px 26px !important;}
+  .apply-steps > li{grid-template-columns:56px minmax(0,1fr) !important;gap:16px !important;padding:26px 0 !important;}
+  .apply-steps > li > span{font-size:52px !important;}
+  .apply-badge{width:110px !important;}
+  .advantage-list > li{grid-template-columns:52px minmax(0,1fr) !important;gap:18px !important;padding:28px 0 !important;}
+  .advantage-list svg{width:48px !important;height:48px !important;}
+  .fit-leaf{width:110px !important;right:-24px !important;top:16px !important;}
 }
