@@ -111,6 +111,16 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .page .hiw-step h3{font-size:40px !important;}
   .hiw-badge{left:auto !important;right:-12px;bottom:-28px !important;width:130px !important;}
   .day-strip{grid-template-columns:repeat(3,minmax(0,1fr)) !important;}
+
+  /* ---------- Immersion Week page ---------- */
+  .day-jump ol{grid-template-columns:repeat(3,minmax(0,1fr)) !important;}
+  .day-list{gap:96px !important;}
+  .day-block{grid-template-columns:minmax(0,1fr) !important;gap:40px !important;}
+  .day-media{order:0 !important;height:460px !important;}
+  .day-num{font-size:96px !important;}
+  .page .day-block h3{font-size:40px !important;}
+  .doing-grid{grid-template-columns:minmax(0,1fr) !important;gap:28px !important;padding:64px 40px 110px !important;}
+  .cert-path{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
 }
 
 /* =========================================================
@@ -244,4 +254,22 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .advantage-list > li{grid-template-columns:52px minmax(0,1fr) !important;gap:18px !important;padding:28px 0 !important;}
   .advantage-list svg{width:48px !important;height:48px !important;}
   .fit-leaf{width:110px !important;right:-24px !important;top:16px !important;}
+
+  /* Immersion Week page */
+  .day-jump ol{grid-template-columns:minmax(0,1fr) !important;gap:8px !important;}
+  .immersion-page .day-chip{flex-direction:row;align-items:baseline;gap:12px;padding:14px 18px;font-size:18px;}
+  .immersion-page .day-chip span{flex:0 0 34px;}
+  .day-list{gap:72px !important;margin-top:64px !important;}
+  .day-block{gap:28px !important;}
+  .day-media{height:300px !important;}
+  .day-tag{left:14px !important;top:14px !important;font-size:12px !important;padding:8px 14px !important;}
+  .day-num{font-size:72px !important;}
+  .page .day-block h3{font-size:32px !important;}
+  .page .day-block p[style*="font-size:26px"]{font-size:22px !important;}
+  .doing-grid{padding:48px 20px 80px !important;}
+  .approach-panel{padding:4px 24px !important;border-radius:28px !important;}
+  .approach-panel > li{grid-template-columns:44px minmax(0,1fr) !important;gap:16px !important;padding:28px 0 !important;}
+  .approach-panel svg{width:40px !important;height:40px !important;}
+  .cert-path{grid-template-columns:minmax(0,1fr) !important;gap:10px !important;}
+  .cert-path > li{padding:20px 22px !important;}
 }

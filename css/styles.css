@@ -58,6 +58,13 @@ img{max-width:none;}
 @media (prefers-reduced-motion:no-preference){
   @supports (animation-timeline:view()){
     @keyframes hiw-reveal{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:none;}}
-    .how-page .hiw-step,.how-page .day-strip > li{animation:hiw-reveal linear both;animation-timeline:view();animation-range:entry 0% entry 35%;}
+    .how-page .hiw-step,.how-page .day-strip > li,.immersion-page .day-block{animation:hiw-reveal linear both;animation-timeline:view();animation-range:entry 0% entry 35%;}
   }
 }
+
+/* ---------- Immersion Week page (/program/immersion-week/) ---------- */
+/* Jump links to each training day */
+.immersion-page .day-chip{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px 20px 20px;border-radius:20px;background:#FBF6EE;color:#0B1B22;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;line-height:1.1;text-transform:uppercase;transition:background .2s,color .2s;}
+.immersion-page .day-chip span{font-weight:700;font-size:14px;letter-spacing:.14em;color:#3DB5B6;}
+.immersion-page .day-chip:hover{background:#070B0E;color:#F2F5F5;}
+@media (prefers-reduced-motion:reduce){.immersion-page .day-chip{transition:none;}}
