@@ -90,6 +90,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
 
   /* ---------- Footer ---------- */
   .footer-bottom{padding:32px 40px 36px !important;}
+
+  /* ---------- Program page ---------- */
+  .program-hero .hero-content{padding-bottom:120px !important;}
+  .what-media{height:560px !important;}
+  .what-points{grid-template-columns:minmax(0,1fr) !important;padding:16px 0 !important;}
+  .what-points > li{padding:36px 40px !important;border-left:0 !important;}
+  .what-points > li + li{border-top:1px solid rgba(242,245,245,.14);}
+  .why-head{grid-template-columns:minmax(0,1fr) !important;gap:28px !important;}
+  .territory-media{height:520px !important;}
+  .territory-chip{right:24px !important;bottom:24px !important;}
+  .journey-grid > li{min-width:0;}
 }
 
 /* =========================================================
@@ -186,4 +197,22 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .login-bar{flex-direction:column;gap:14px !important;padding:24px 20px !important;border-radius:28px !important;text-align:center;}
   .footer-bottom{flex-direction:column;gap:10px;text-align:center;padding:28px 20px 32px !important;}
   .footer-url{letter-spacing:.12em !important;word-break:break-all;}
+
+  /* Program page */
+  .program-hero .hero-content{padding-bottom:64px !important;}
+  .what-media{height:380px !important;}
+  .what-accent{right:-10px !important;}
+  .what-points > li{padding:28px 24px !important;}
+  .benefit-grid,.hub-grid{grid-template-columns:minmax(0,1fr) !important;}
+  .benefit-grid > div{grid-template-columns:minmax(0,1fr) !important;row-gap:22px;padding:32px 26px 36px !important;}
+  .hub-grid{gap:20px !important;}
+  .hub-media{height:220px !important;}
+  .hub-card > div:last-child{padding:28px 24px 32px !important;}
+  .hub-link{white-space:normal !important;}
+  .territory-media{height:380px !important;}
+  .territory-chip{left:16px;right:16px !important;bottom:16px !important;max-width:none !important;padding:18px 22px !important;}
+  .territory-chip > span[aria-hidden]{font-size:64px !important;}
+  .who-panel{padding:32px 24px 36px !important;border-radius:28px !important;}
+  .who-panel li{padding:16px 0 !important;}
+  .who-panel li:last-child{padding-bottom:0 !important;}
 }
