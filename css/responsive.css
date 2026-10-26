@@ -132,6 +132,12 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .support-panel{padding:56px 48px 56px !important;}
   .support-leaf{display:none;}
 
+  /* ---------- Our Standards page ---------- */
+  .editorial-media{height:560px !important;}
+  .req-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+  .eval-word{font-size:68px !important;}
+  .maintain-frame{grid-template-columns:minmax(0,1fr) !important;gap:48px !important;padding:56px 48px !important;}
+  .maintain-badge{width:100%;max-width:300px;margin:0 auto;}
 }
 
 /* =========================================================
@@ -309,4 +315,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .yours-grid > li{padding:24px 0 !important;border-right:0 !important;flex-direction:row !important;align-items:center;}
   .included-page .yours-label{font-size:24px;}
 
+  /* Our Standards page */
+  .editorial-media{height:380px !important;}
+  .page .standards-quote p{font-size:36px !important;}
+  .req-grid{grid-template-columns:minmax(0,1fr) !important;gap:14px !important;}
+  .req-card{padding:32px 24px 34px !important;border-radius:28px !important;}
+  .req-stat{font-size:88px !important;}
+  .eval-word{font-size:48px !important;}
+  .eval-list > li{padding:28px 0 30px !important;}
+  .maintain-frame{padding:36px 22px 40px !important;border-radius:28px !important;gap:32px !important;}
+  .maintain-badge{max-width:220px;}
+  .market-panel{padding:34px 24px 32px !important;border-radius:28px !important;}
+  .market-one{font-size:110px !important;}
+  .market-panel span[style*="font-size:30px"]{font-size:22px !important;}
 }
