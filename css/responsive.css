@@ -121,6 +121,17 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .page .day-block h3{font-size:40px !important;}
   .doing-grid{grid-template-columns:minmax(0,1fr) !important;gap:28px !important;padding:64px 40px 110px !important;}
   .cert-path{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+
+  /* ---------- Everything Included page ---------- */
+  .system-grid{grid-template-columns:minmax(0,1fr) !important;}
+  .app-visual{height:560px !important;}
+  .design-collage{height:560px !important;}
+  .vault-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+  .vault-tile{height:380px !important;}
+  .catalog-mock{height:560px !important;max-width:640px;width:100%;margin:0 auto;}
+  .support-panel{padding:56px 48px 56px !important;}
+  .support-leaf{display:none;}
+
 }
 
 /* =========================================================
@@ -272,4 +283,30 @@ a:focus-visible,button:focus-visible{outline:3px solid #3DB5B6;outline-offset:3p
   .approach-panel svg{width:40px !important;height:40px !important;}
   .cert-path{grid-template-columns:minmax(0,1fr) !important;gap:10px !important;}
   .cert-path > li{padding:20px 22px !important;}
+
+  /* Everything Included page */
+  .system-grid > div{padding:32px 24px 30px !important;}
+  .app-visual{height:480px !important;}
+  .app-visual > div:first-child{inset:0 !important;border-radius:28px !important;}
+  .app-phone{width:230px !important;height:420px !important;border-radius:42px !important;}
+  .app-phone img{width:120px !important;}
+  .design-collage{height:400px !important;}
+  .design-collage-inset{border-width:6px !important;border-radius:28px !important;}
+  .vault-grid{grid-template-columns:minmax(0,1fr) !important;gap:12px !important;}
+  .vault-tile{height:320px !important;}
+  .vault-body{padding:22px 20px !important;}
+  .sales-grid{grid-template-columns:minmax(0,1fr) !important;gap:10px !important;}
+  .sales-grid > li{display:flex;align-items:center;gap:18px;padding:22px 22px !important;}
+  .included-page .sales-label{margin-top:0;font-size:22px;}
+  .included-page .sales-num{font-size:36px;}
+  .catalog-mock{height:420px !important;}
+  .catalog-front div[style*="font-size:40px"]{font-size:28px !important;}
+  .support-panel{padding:36px 22px 40px !important;gap:36px !important;}
+  .support-cols{grid-template-columns:minmax(0,1fr) !important;gap:12px !important;}
+  .support-cols > div{padding:30px 24px 32px !important;}
+  .page .support-cols h3{font-size:30px !important;}
+  .yours-grid{grid-template-columns:minmax(0,1fr) !important;}
+  .yours-grid > li{padding:24px 0 !important;border-right:0 !important;flex-direction:row !important;align-items:center;}
+  .included-page .yours-label{font-size:24px;}
+
 }

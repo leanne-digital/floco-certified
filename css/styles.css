@@ -68,3 +68,23 @@ img{max-width:none;}
 .immersion-page .day-chip span{font-weight:700;font-size:14px;letter-spacing:.14em;color:#3DB5B6;}
 .immersion-page .day-chip:hover{background:#070B0E;color:#F2F5F5;}
 @media (prefers-reduced-motion:reduce){.immersion-page .day-chip{transition:none;}}
+
+/* ---------- Everything Included page (/program/everything-included/) ---------- */
+/* "Explore" links from each business area to the resource sections below */
+.included-page .system-links{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px;}
+.included-page .system-links a{display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border-radius:999px;border:1px solid rgba(11,27,34,.25);color:#0B1B22;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s;}
+.included-page .system-links a::after{content:"↓";}
+.included-page .system-links a:hover{background:#0B1B22;border-color:#0B1B22;color:#F2F5F5;}
+.included-page .system-links--dark a{border-color:rgba(242,245,245,.35);color:#F2F5F5;}
+.included-page .system-links--dark a:hover{background:#3DB5B6;border-color:#3DB5B6;color:#061014;}
+.included-page .vault-icon{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#3DB5B6;color:#061014;}
+.included-page .vault-tile .slot-img{transition:transform .5s ease;}
+.included-page .vault-tile:hover .slot-img{transform:scale(1.05);}
+.included-page .sales-num{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:44px;line-height:1;color:transparent;-webkit-text-stroke:1.5px #3DB5B6;}
+.included-page .sales-label{display:block;margin-top:16px;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:26px;line-height:1.1;text-transform:uppercase;}
+.included-page .yours-grid li{display:flex;flex-direction:column;gap:14px;}
+.included-page .yours-label{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:30px;line-height:1.05;text-transform:uppercase;}
+@media (prefers-reduced-motion:reduce){
+  .included-page .system-links a,.included-page .vault-tile .slot-img{transition:none;}
+  .included-page .vault-tile:hover .slot-img{transform:none;}
+}
